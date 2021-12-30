@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
-import AppHeaderBar from '../../components/AppHeaderBar/AppHeaderBar';
-import {SideBar} from '../../components/SideBar/SideBar';
-import {StyledMainContent} from './styles';
+import Head from "next/head"
+import React from "react"
+import {StyledMainContent} from "./styles";
+import styles from "../../styles/Home.module.css"
+import AppHeaderBar from "../AppHeaderBar/AppHeaderBar";
+import {SideBar} from "../SideBar/SideBar";
 
 export default function Layout(props) {
   return (
@@ -20,7 +21,7 @@ export default function Layout(props) {
           {props.children}
         </main>
       </StyledMainContent>
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer} />
     </div>
   )
 }

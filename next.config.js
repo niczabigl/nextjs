@@ -4,8 +4,9 @@ module.exports = (phase, { defaultConfig }) => {
      */
     const nextConfig = {
         images: {
-            domains: ['yesno.wtf'],
+            domains: ["yesno.wtf"]
         },
+        future: { webpack5: true }
     }
     return nextConfig
   }
